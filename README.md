@@ -1,3 +1,4 @@
+```markdown
 # Laravel Manual Cookie Authentication System
 
 This project is a custom authentication system built with Laravel that handles user registration and login using **manual cookies** instead of Laravel's default session-based authentication.
@@ -23,7 +24,7 @@ This project is a custom authentication system built with Laravel that handles u
 
 ```
 
-2. **Install dependencies:**
+2. **Install PHP dependencies:**
 ```bash
 composer install
 
@@ -31,15 +32,21 @@ composer install
 
 
 3. **Environment Setup:**
-* Copy `.env.example` to `.env`.
-* Configure your database (MySQL/SQLite) in the `.env` file.
-
-
+* Copy the environment file:
 ```bash
 cp .env.example .env
+
+```
+
+
+* Generate the application key:
+```bash
 php artisan key:generate
 
 ```
+
+
+* **Note:** Open the `.env` file and configure your database settings (DB_DATABASE, DB_USERNAME, etc.).
 
 
 4. **Run Migrations:**
@@ -49,9 +56,12 @@ php artisan migrate
 ```
 
 
-5. **Start the Server:**
+5. **Start the Local Development Server:**
 ```bash
 php artisan serve
 
 ```
+
+```
+
 ```
